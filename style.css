@@ -1,0 +1,316 @@
+body{
+  background-color: #AAAAFF;
+  margin: 0;
+  font-family: Perpetua;
+}
+
+#name{
+  font-size: 5em;
+  text-align: center;
+}
+
+#space{
+  min-height: 100px;
+}
+
+#info1{
+  font-size: 1.75em;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 25%;
+}
+
+#space1{
+  min-height: 150px;
+}
+
+#container{
+  min-height: 600px;
+}
+
+#main{
+  display: grid;
+  min-height: 2000px;
+  max-height: 2000px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#plaat_1{
+  background-image: url("plaatje1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #AAFFEE;
+}
+
+ #plaat_2{
+  background-image: url("plaatje2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: purple;
+}
+
+#plaat_3{
+  background-image: url("plaatje3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: orange;
+}
+
+#plaat_4{
+  background-image: url("plaatje4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: yellow;
+}
+
+#plaat_5{
+  background-image: url("plaatje5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: blue;
+}
+
+#plaat_6{
+  background-image: url("plaatje6.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: lightgreen;
+}
+
+#plaat_1, #plaat_2, #plaat_3, #plaat_4, #plaat_5, #plaat_6{
+  min-height: 250px;
+  min-width: 100%;
+  font-size: 1.5em;
+  color: white;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#plaat_1:hover, #plaat_2:hover, #plaat_3:hover, #plaat_4:hover, #plaat_5:hover, #plaat_6:hover{
+  opacity: 0.5;
+  background-image: none;
+}
+
+#meer_info{
+  text-align: left;
+  font-size: 2em;
+  margin-left: 25px;
+}
+
+#input_box{
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+.message{
+  min-height: 55px;
+  min-width: 50%;
+  display: grid;
+  grid-column: auto;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#message{
+  min-height: 50px;
+  min-width: 50%;
+  display: grid;
+  grid-column: auto;
+  margin-left: 50px;
+  height: 110px;
+}
+
+.extra_info{
+  margin-left: 50px;
+}
+
+input[type="text"]{
+    font-size: 2em;
+}
+
+#knopje{
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #FEDCBA;
+  border-radius: 100px;
+  margin-bottom: 100px;
+}
+
+#knopje:hover{
+  background-color: #CCAEAF;
+}
+
+#last_info{
+  padding-left: 50px;
+  display: grid;
+}
+
+.space_small{
+  height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.h{
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 1000px){
+  #name{
+    font-size: 5em;
+    text-align: center;
+    margin-right: 10%;
+  }
+
+  .space{
+    min-height: 100px;
+  }
+
+  #info1{
+    font-size: 1.75em;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 25%;
+  }
+
+  .space1{
+    min-height: 150px;
+  }
+
+  #container{
+    min-height: 600px;
+  }
+
+  #main{
+    display: grid;
+    min-height: 1250px;
+    max-height: 1250px;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-areas: "p1 p2 p2"
+                         "p3 p3 p4 "
+                         "p5 p6 p6";
+
+  }
+
+  #plaat_1{
+    grid-area: p1;
+    background-color: #AAFFEE;
+  }
+
+   #plaat_2{
+    grid-area: p2;
+    background-color: purple;
+  }
+
+  #plaat_3{
+    grid-area: p3;
+    background-color: orange;
+  }
+
+  #plaat_4{
+    grid-area: p4;
+    background-color: yellow;
+  }
+
+  #plaat_5{
+    grid-area: p5;
+    background-color: blue;
+  }
+
+  #plaat_6{
+    grid-area: p6;
+    background-color: lightgreen;
+  }
+
+  #plaat_1:hover, #plaat_2:hover, #plaat_3:hover, #plaat_4:hover, #plaat_5:hover, #plaat_6:hover{
+    opacity: 0.5;
+  }
+
+
+#plaatje1, #plaatje2, #plaatje3, #plaatje4, #plaatje5, #plaatje6{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  #meer_info{
+    text-align: left;
+    font-size: 2em;
+    padding: 50px;
+  }
+
+  #input_box{
+    padding: 25px;
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+textarea{
+  width: 100%;
+}
+
+  .message{
+    min-height: 37.5px;
+    min-width: 50%;
+    display: grid;
+    grid-column: auto;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #message{
+    min-width: 50%;
+    display: grid;
+    grid-column: auto;
+    margin-left: 50px;
+    height: 165px;
+  }
+
+  .extra_info{
+    margin-left: 50px;
+  }
+
+  input[type="text"]{
+      font-size: 2em;
+  }
+
+  #knopje{
+    padding: 25px;
+    background-color: #FEDCBA;
+    border-radius: 100px;
+  }
+
+  #knopje:hover{
+    background-color: #CCAEAF;
+  }
+
+.space_small{
+  height: 10px;
+}
+
+.h{
+  text-align: right;
+}
+
+.more_info{
+  text-align: right;
+  font-size: 1em;
+}
+
+#last_info{
+  font-size: 2em;
+  padding-right: 50px;
+  text-align: left;
+  height: 400px;
+}
+
+#WOW{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+}
